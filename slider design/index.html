@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+          <span>discover</span>
+          <h1>Nelson Lozano Design</h1>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum reiciendis recusandae excepturi pariatur ab quas earum ducimus obcaecati perspiciatis, voluptatibus hic corrupti beatae aut ipsam laborum quasi odit esse? Quibusdam!</p>
+          <a href="#">download app</a>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+              <div>
+                <h2>Lollipop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur, adipisci sint sequi eveniet at laboriosam molestias officiis pariatur, cupiditate qui aliquam? Doloremque aliquam expedita dolore ipsa adipisci vero itaque.</p>
+                <a href="https://en.wikipedia.org/wiki/Jellyfish" target="_blank">explore</a>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+              <div>
+                <h2>Jelly Belly.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur, adipisci sint sequi eveniet at laboriosam molestias officiis pariatur, cupiditate qui aliquam? Doloremque aliquam expedita dolore ipsa adipisci vero itaque.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank">explore</a>
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--three">
+      
+              <div>
+                <h2>Jolly Rancher.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur, adipisci sint sequi eveniet at laboriosam molestias officiis pariatur, cupiditate qui aliquam? Doloremque aliquam expedita dolore ipsa adipisci vero itaque.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank">explore</a>
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--four">
+      
+              <div>
+                <h2>Pop Rocks</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur, adipisci sint sequi eveniet at laboriosam molestias officiis pariatur, cupiditate qui aliquam? Doloremque aliquam expedita dolore ipsa adipisci vero itaque.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Shark" target="_blank">Buy</a>
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--five">
+      
+              <div>
+                <h2>Dolphin Candy</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis sint culpa quidem atque temporibus, ipsa fuga accusamus harum. Praesentium cupiditate vitae architecto officia sapiente omnis, obcaecati ipsum soluta neque!
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Dolphin" target="_blank">Get More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png" alt="" class="bg">
+        <img src="https://cdn.pixabay.com/photo/2012/04/13/13/57/scallop-32506_960_720.png" alt="" class="bg2">
+      </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+           <script>
+
+
+var swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: true
+  },
+  keyboard: {
+    enabled: true
+  },
+  mousewheel: {
+    thresholdDelta: 70
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 1
+    },
+    1024: {
+      slidesPerView: 2
+    },
+    1560: {
+      slidesPerView: 3
+    }
+  }
+});
+
+      </script>
+</body>
+</html>
